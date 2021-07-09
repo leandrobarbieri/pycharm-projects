@@ -1,0 +1,3 @@
+nome = "Lele"
+print(nome)
+
