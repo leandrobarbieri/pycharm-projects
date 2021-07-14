@@ -1,8 +1,8 @@
 """
-Capiturar os erros lançados
+Capiturar os erros lançados automaticamente ou manualmente via raise
 Fazer o tratamento adequado para impedir que o programa tenha que parar de funcionar
 try:
-    //tente fazer isso, mas se tiver algum erro lançado
+    //tente fazer isso, mas se tiver algum erro lançado entre no except
 except:
     //Faça isso se tivel algum erro lançado no try
 """
@@ -13,9 +13,9 @@ except:
 try:
     funcao_indefinida()
 except:
-    print("Deu algum problema no bloco try acima")
+    print("Deu algum problema no bloco try acima mas o programa não parou a execução")
 
-# mesmo com uma função que não existe, o programa não quebra
+# mesmo com uma função que não possa lidar com o tipo de argumento, o programa não quebra
 try:
     len(2)
 except:
@@ -27,6 +27,7 @@ try:
     funcao_indefinida()
 except NameError as err:
     print(f"Você está usando uma função inexistente - {err}")
+
 
 # 3- Tratando um erro específico TypeError
 try:
@@ -42,7 +43,7 @@ except ValueError as err:
     print(f"O tipo não é o esperado  - {err}")
 
 
-# Capiturando vários tipos no mesmo try
+# Capiturando vários tipos no mesmo try. A última capitura os erros genéricos, não previstos
 try:
     print(int("A"))
 except ValueError as err:
@@ -53,10 +54,10 @@ except TypeError as err:
     print(f"O tipo passado para a função não está correto - {err}")
 # Genérico: se não for nenhum desses acima
 except:
-    print("O tipo passado para a função não está correto")
+    print("Erro genérico")
 
 
-# Dentro de um função
+# Try/Except dentro de uma função
 def pega_valor_dict(dicionario, chave):
     try:
         return dicionario[chave]

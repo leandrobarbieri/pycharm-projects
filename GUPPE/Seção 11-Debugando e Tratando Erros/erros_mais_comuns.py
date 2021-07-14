@@ -48,11 +48,11 @@ print(len("leandro"))
 lista1 = [["Leandro", "Barbieri"], ["Bruna", "Moraes"]]
 print(lista1[1][1])
 
-# IndexError: list index out of range
+# IndexError: list index out of range. Não existe mais de 2 listas
 # print(lista1[2][1])
 
 """6- ValueError: Um função integrada recebe tipo correto mas o valor inapropiado"""
-# OM
+# OK
 print(int(42))
 # OK
 print(int("42"))
@@ -61,6 +61,7 @@ print(int("42"))
 
 """7- KeyError: Tenta acessar uma chave que não existe"""
 dic = {"chave1": 100, "chave2": 200}
+# OK
 print(dic["chave2"])
 
 # KeyError: 'chave3'
@@ -71,6 +72,7 @@ tupla = (1, 2, 4, 5)
 
 # AttributeError: 'tuple' object has no attribute 'sort'
 # print(tupla.sort())
+
 
 
 
