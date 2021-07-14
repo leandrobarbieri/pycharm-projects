@@ -1,5 +1,5 @@
 """
-raise:
+raise: lançar erros customizados para a pilha de execução do programa
 Criar os proprios tipos de erros de acordo com a necessidade
 Regras de negócio que lança exptions
 Proprias mensagens de erro
