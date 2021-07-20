@@ -1,0 +1,1 @@
+Só escreve a primeira vez, depois que o arquivo é criado não pode mais ser aberto com a opção 'x'

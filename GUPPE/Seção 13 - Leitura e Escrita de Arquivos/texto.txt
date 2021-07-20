@@ -1,0 +1,3 @@
+Escrever dados em um arquivo1.
+Escrever dados em um arquivo2.
+Escrever dados em um arquivo3.

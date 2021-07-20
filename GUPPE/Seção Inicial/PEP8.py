@@ -43,6 +43,9 @@ Certo: nome_funcao(algo[1], {outro:2})
 [7] - Termine uma instrução sempre com uma nova linha
 
 """
+# Imprim: Esse modulo foi importado!
+import main
+
 from pandas import DataFrame
 d = DataFrame()
 
