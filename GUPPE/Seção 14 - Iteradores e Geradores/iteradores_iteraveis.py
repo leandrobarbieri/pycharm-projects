@@ -8,7 +8,7 @@ iterator: tupla, list, dict
 
 iterable:
 - retorna um iterator
-- Não retorna um dado
+- Não retorna um dado diretamente, precisa ser convertido com a função iter
 
 """
 
@@ -63,7 +63,7 @@ numeros = [9, 8, 7]
 meu_for(numeros)
 
 
-# iterador customizado. precisa ter pelo menos a função iter e next
+# classe que simula um range() iterador customizado. precisa ter pelo menos a função iter e next
 class Contador:
     # construtor da classe. self representa o proprio objeto da classe
     def __init__(self, menor, maior):

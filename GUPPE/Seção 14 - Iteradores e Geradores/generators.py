@@ -2,14 +2,14 @@
 Generators são iterators:
 - podem ser criados com funções geradoras
 
-Diferemças entre funções normais e funções generators
+Diferenças entre funções normais e funções generators
 
-Funções:
-- usar return
+Funções normais:
+- usam return para finalizar
 - retorna uma vez apenas
 
 Generators func:
-- utilizam yield (não return)
+- utilizam yield (não return), ficam aguardando serem iteradas
 - retorna um generator
 
 ** São estruturas mais otimizadas
@@ -39,7 +39,7 @@ for num in generator:
     print(num)
 
 
-# transformar em uma lista gera automaticamente todos os elmentos
+# transformar em uma lista um generator faz com que ele gere automaticamente todos os elmentos
 print("-----------------")
 lista_gerada = list(conta_ate(10))
 print(lista_gerada)
