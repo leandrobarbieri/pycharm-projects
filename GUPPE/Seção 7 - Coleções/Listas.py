@@ -113,11 +113,11 @@ print("---------------")
 # lista invertida: ireibraB ordnaeL
 print(lista9.reverse())
 nome = 'Leandro Barbieri'
-# vai do do inicio ao fim com o passo 0
+# vai do do inicio ao fim com o passo -1
 print(nome[::-1])
 print("---------------")
 
-# tamanho da lista
+# tamanho da lista len()
 lista10 = list("Leandro")
 print(lista10)
 print(f"Tamanho da lista: {len(lista10)}")
@@ -149,6 +149,7 @@ print("---------------")
 lista13 = "Leandro Moraes Barbieri"
 print(f"A fase {lista13} pode ser transformada em uma lista de palavras com "
       f"lista13.split(). Resultado: {lista13.split()}")
+
 lista14 = "Programação-Em-Python".split("-")
 print(lista14)
 print("---------------")
@@ -183,6 +184,7 @@ while produto != 'sair':
     if produto != 'sair':
         carrinho.append(produto)
 # carrinho.pop()
+
 for produto in carrinho:
     print(f" Produto: {produto}")
 print(f"Todos os produtos: {carrinho}")
@@ -248,7 +250,8 @@ print("---------------")
 
 # buscando o indice do segundo C de forma dinamica
 print(lista18.index("C", lista18.index("C")+1))
-# buscando o indice do terceiro C de forma dinamica
+
+# buscando o indice do terceiro C de forma dinamica/recursiva
 print(f"Buscando o terceiro C: Posição -> {lista18.index('C', lista18.index('C', lista18.index('C')+1)+1)}")
 print("---------------")
 
@@ -314,7 +317,7 @@ print("---------------")
 lista21 = [1, 2, 3, 4, 5]
 print(lista21)
 
-# Não cria referencia. DeepCopy
+# Não cria referencia. DeepCopy copia completamente os valores
 novaLista = lista21.copy()
 print(novaLista)
 novaLista.append(6)
@@ -324,7 +327,7 @@ print(lista21)
 print(novaLista)
 print("---------------")
 
-# Shallow copy
+# Shallow copy. Copia apenas a referencia
 lista22 = [1, 2, 3, 4, 5]
 print(lista22)
 
@@ -338,7 +341,7 @@ print("---------------")
 
 # Copiando os elementos DeppCopy
 lista23 = [1, 2, 3]
-listanova = lista23[:]
+listanova = lista23[:] # usando essa sintax com dois pontos faz uma copia por valor, não cria referencia
 listanova.append(4)
 
 print(lista23)
@@ -362,7 +365,7 @@ import copy
 produtos2 = copy.deepcopy(produtos)
 
 # Alterando o preço do Ipad somente na lista nova
-produtos2[0][1] = 6000
+produtos2[0][1] = 9999
 
 print(produtos)
 print(produtos2)

@@ -1,5 +1,5 @@
 """
-Funções podem ser passadas como parametro como se fossem objetos
+Funções podem ser passadas como parametro como se fossem objetos e depois serem chamadas pelo nome
 """
 
 # Exemplo: função para limpeza e tratamento de strings
@@ -23,6 +23,7 @@ def tratar_strings(lista):
 
 
 print(tratar_strings(lista1))
+
 
 # Segunda Forma: Usando funções como parâmetros
 

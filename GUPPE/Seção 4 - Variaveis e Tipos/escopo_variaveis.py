@@ -15,10 +15,11 @@ Python é de tipagem dinâmica: ao declarar uma variavel não é colocado o tipo
 """
 
 """Variavel Global"""
-num = 10
+num = 1
 if num < 11:
     """Variavel local"""
+    nova = 0
     nova = num + 1
-    print(nova)
 
+# conseguimos acessar a variavel global alterada no escopo do if
 print(nova)

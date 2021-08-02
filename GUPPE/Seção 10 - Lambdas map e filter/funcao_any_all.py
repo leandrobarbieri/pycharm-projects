@@ -22,8 +22,12 @@ print(all(["Oi", "Tudo", "Bem"]))
 lista_nomes = ["Carlos", "Camila", "Carol"]
 print(all([nome[0] == "C" for nome in lista_nomes]))
 
-# Pelo menos um é verdadeiro
+
+# ANY: Pelo menos um é verdadeiro
+# False
 print(any([False, False, False]))
+
+# True
 print(any([False, False, True]))
 
 

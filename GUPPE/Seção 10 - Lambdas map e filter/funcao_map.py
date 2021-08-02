@@ -1,9 +1,8 @@
 """
-Mapear um dado de uma lista para uma função aplicar a expressão
+Mapear um dado de uma lista para uma função aplicar a função em cada elemento da lista
 Aplica a função em todos os elementos da lista
 A função usada no map só pode receber um parametro
 """
-
 import math
 
 
@@ -32,7 +31,6 @@ areas = map(area_circulo, lista_raios)
 print(list(areas))
 
 # Map com lambda: para cada item na lista lista_raios aplica a função lambda com raio como parametro e a expressão
-
 resultado_map = list(map(lambda raio: math.pi * (raio ** 2), lista_raios))
 resultado_map2 = list(map(lambda raio: math.pi * (raio ** 2), lista_raios))
 print(resultado_map)

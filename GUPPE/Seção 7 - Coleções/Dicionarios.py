@@ -3,7 +3,7 @@ As vezes também são conhecidas como mapas
 Dicionários são coleções como as outras
 Mapeamento de chave-valor
 São representados por {}
-Não permitem chaves repetidas.
+Não permitem chaves repetidas dentro do mesmo dict, mas podem ter dict de dicts.
 """
 # <class 'dict'>
 print(type({}))
@@ -17,6 +17,7 @@ print(paises2)
 # Acessando elementos usando a Key.
 # Não são indexados a partir do zero, é a partir do valor da chave definida, não importa a posição
 print(paises2["br"])
+
 # Caso utilizarmos uma chave que não existe gera um KeyError
 # print(paises2["AA"])
 
@@ -34,7 +35,7 @@ print(paises2.get("AAA", "Elemento não encontrado"))
 
 # Verificar se existe uma chave específica no dicionário. A busca é pela chave não o valor
 if "br" in paises2:
-    print(f"br existe no dicionário paises2")
+    print(f"br é uma chave que existe no dicionário paises2")
 
 # As chaves podem ser qualquer tipo de dado (int, float, list, tuple, dict...)
 # usando tuplas como chaves
@@ -44,6 +45,7 @@ localidades = {
     (33.222, 37.222): "Estritório em Vix",
     (32.333, 36.333): "Estritório em Rj"
 }
+
 # Todas as coordenadas das localidades
 for escritorio in localidades:
     lat, long = escritorio
@@ -52,15 +54,18 @@ for escritorio in localidades:
 # Acicionar elementos em um dict
 receita = {"jan": 100, "fev": 120, "mar": 300}
 
-# Forma 1: mais comum
+# Forma 1: mais comum, atribuir a uma chave que não existe cria um novo elemento
 receita["abr"] = 350
 print(receita)
 
+
 # Forma 2: Atualizando e adicionando. Se a chave já existe então atualiza, senão adiciona
-# adiciona
+
+# adiciona mai que não existe no dict atual
 receita.update({"mai": 500})
 print(receita)
-# atualiza
+
+# atualiza abr que já existe no dict atual
 receita.update({"abr": 600})
 print(receita)
 
@@ -94,7 +99,7 @@ print(f"Dicionário criado a partir de uma lista de chaves {dicionario}")
 
 # Forma 1: pop remove e retorna o valor
 removido = receita.pop("mai")
-print(receita)
+print(f"Foi removido o item {removido}. O dict atual: {receita}")
 
 # Forma 2: somente remove, não retorna valor
 del receita["jan"]

@@ -1,15 +1,14 @@
 """
-Utilizando lambdas
-Conhecidas como expressões lambdas, funções sem nome, funções anonimas
+Utilizando lambdas: Conhecidas como expressões lambdas, funções sem nome, funções anonimas
 
-- padrao de função em python
+-> padrao de função em python:
     def soma(a, b):
         return a + b
 
+-> função equivalente escrita como lambda:
 lambda <parameto>: <expressao_retorno>
 
 """
-
 
 # Função em python padrão
 def minha_funcao(x):
@@ -23,7 +22,7 @@ print(minha_funcao(4))
 # lambda <parameto>: <expressao_retorno>
 calc = lambda x: x * 3 + 1
 
-# Calc vira um obj que pode ser utilizado, mas essa não é o cenário de utilização
+# Calc vira um obj que pode ser utilizado, mas essa não é o cenário de utilização mais comum
 print(calc(2))
 print(calc(4))
 
@@ -32,7 +31,7 @@ nome_completo = lambda nome, sobrenome: nome.strip().title() + " " + sobrenome.s
 print(nome_completo("leAndrO", " BARbieri"))
 
 # Podemos ter nenhum ou vários parametros e entrada
-nenhuma_entrada = lambda: "Como não amar python"
+nenhuma_entrada = lambda: "Lambda sem parametro de entrada"
 uma_entrada = lambda x: 3 * x + 1
 varias_entradas = lambda x, y, z: (x * y * z)
 
@@ -44,12 +43,12 @@ lista_autores = ["Pedro Bial", "Youval Del Harary", "J. K Holling", "Augusto Cur
 print(f"Antes: {lista_autores}")
 
 # O sort ordena a lista, x é o parametro com os nomes da lista (poderia ser qualquer nome), percorre a lista toda
-# aplicando o split onde tem espaço e pega a ultima palacra -1, ou seja, o último sobrenome
+# aplicando o split onde tem espaço e pega a ultima palavra -1, ou seja, o último sobrenome
 lista_autores.sort(key=lambda x: x.split(" ")[-1].lower())
-print(f"Depois: {lista_autores}")
+print(f"Depois (ordenada pelo sobrenome): {lista_autores}")
 
 
-# Usando lambda no retorno de uma função, retorna apenas a definição, não o resultado
+# Usando lambda no retorno de uma função, retorna apenas a definição da função, não o resultado
 def geradora_funcao_quadratica(a, b, c):
     return lambda x: a * x ** 2 + b * x + c
 

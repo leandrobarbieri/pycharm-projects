@@ -1,7 +1,6 @@
 """
 Trabralhar com cursor nos ajuda a manipular a partir de onde será lido ou escrito
 seek() movimentar o cursor no arquivo, alterar a posição
-
 """
 
 

@@ -9,7 +9,7 @@ Funções normais:
 - retorna uma vez apenas
 
 Generators func:
-- utilizam yield (não return), ficam aguardando serem iteradas
+- utilizam yield (não return), ficam aguardando serem iteradas para gerar os valores
 - retorna um generator
 
 ** São estruturas mais otimizadas

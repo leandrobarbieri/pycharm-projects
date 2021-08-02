@@ -1,7 +1,8 @@
 """
 Permite adiconar/remover no começo e no final da lista
-
 """
+
+# esse tipo de collection não é padrão precisa ser importado
 from collections import deque
 
 deq = deque("Leandro")

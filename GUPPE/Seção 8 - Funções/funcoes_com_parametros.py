@@ -1,10 +1,11 @@
 """
-Funções que recebem dados para serem processados dentro da função
+Funções que recebem dados para serem processados dentro da função (param)
 - funções podem ter n parametros de entrada
 - os parametros podem ser obrigatorios ou não
 """
 
 
+# recebe um parametro, não precisa especificar tipo
 def quadrado(num):
     # return num * num
     return num ** 2
@@ -13,7 +14,7 @@ def quadrado(num):
 for i in range(5):
     print(f"O quadrado de {i} é {quadrado(i)}")
 
-# Esse tipo de função o parametro é obrigatório - TypeError
+# Esse tipo de função o parametro é obrigatório, senão recebe erro - TypeError
 # quadrado()
 
 
@@ -63,7 +64,7 @@ lista_numeros = [1, 2, 3, 4, 5]
 print(soma_impares(lista_numeros))
 
 
-# Função com parametro padrão: a passagem de parametro é opcional
+# Função com valor de parametro padrão: neste caso a passagem de parametro é opcional
 
 # Se não informar a potencia faz o calculo ao quadrado (Informar o valor no parametro faz dele opcional "potencia=2")
 def exponencial_opcional(num, potencia=2):
@@ -89,6 +90,9 @@ def soma_opcional(num1=0, num2=0):
 
 print(soma_opcional(1, 1))
 
+# Não dá erro, apenas retorna 0
+print(soma_opcional())
+
 
 def mostra_informacao(nome="Leandro", instrutor=False):
     if nome == "Leandro" and instrutor:
@@ -113,7 +117,7 @@ tipo_de_variavel = "Global"
 def escopo_de_variaveis():
     # ignora a variavel global e usa a local
     tipo_de_variavel = "Local"
-    return f"Tipo de variavel {tipo_de_variavel}"
+    return f"Tipo de variavel {tipo_de_variavel} "
 
 
 print(escopo_de_variaveis())

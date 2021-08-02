@@ -11,7 +11,7 @@ https://pymotw.com/2/collections/counter.html
 from collections import Counter
 lista1 = ["Leandro", "Leandro", "Leandro", "Leandro", "Bruna", "Bruna", "Bruna", "Breno", "Breno"]
 
-# utilizando o counter
+# utilizando o counter: retorna quantas vezes um elemento aparece na collection
 counter1 = Counter(lista1)
 print(counter1)
 
@@ -35,6 +35,7 @@ print(Counter(palavras).most_common(5))
 for key, val in Counter(palavras).items():
     print(f"Chave: {key}, Valor: {val}")
 
+# chave: palavra, valor: quatidade
 counter2 = Counter(palavras)
 for palavra in palavras:
     print(f"Palavra: {palavra} - Quantidade: {counter2[palavra]}")

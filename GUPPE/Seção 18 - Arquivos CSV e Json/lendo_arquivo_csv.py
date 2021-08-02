@@ -22,6 +22,7 @@ from csv import reader
 
 with open("lutadores.csv", encoding="UTF-8") as arquivo:
     dados = reader(arquivo, delimiter=",")
+
     # pula a primeira linha para não imprimir os dados do cabeçalho
     next(dados)
     for linha in dados:
@@ -42,6 +43,7 @@ with open("lutadores.csv", encoding="UTF-8") as arquivo:
 
 
 print("\n----------------------------------------- lendo com pandas")
+
 # usando pandas
 import pandas as pd
 

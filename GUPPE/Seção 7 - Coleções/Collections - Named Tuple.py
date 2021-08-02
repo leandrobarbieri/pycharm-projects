@@ -1,6 +1,8 @@
 """
-Named Tuple: são tuplas onde especificamos nomes e parametros
-É como se estivessemos criando um tipo de dado customizado
+Named Tuple: são tuplas onde especificamos previamente os nomes para cada posição na tupla
+É como se estivessemos criando uma estrutura que presenta os valores nas tuplas
+1-Define a estrurura
+2-Usa a estrutura ao inserir um elemento
 """
 # tupla padrão
 tupla1 = ("A", "B", "C")

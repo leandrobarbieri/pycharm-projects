@@ -3,7 +3,7 @@ O *args é um paramtro de entrada de uma função
 Pode ser qualquer nome desde que começe com *, *args é uma convenção
 
 Utilizado em um a função para dar mais flexibilidade no numero de parametros que ela aceita
-Os argumentos extras são passados para *args como uma tupla imutavel
+Os argumentos extras são passados para *args que se transformam em uma tupla imutavel que pode ser acessada pela função
 
 
 Essa é a ordem obrigatoria: Os parametros deve estar na seguinte sequencia na assinatura da função.

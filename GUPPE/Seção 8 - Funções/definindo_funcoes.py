@@ -16,10 +16,10 @@ def nome_da_funcao(parametros_de_entrada):
 
 cores = ["Azul", "Preto", "Branco"]
 
-# função built-in do python, podem ser chamadas diretamente sem a sintax de ponto
+# função built-in do python, print() podem ser chamadas diretamente sem a sintax de ponto
 print(cores)
 
-# função que fazer parte do tipo de objeto (lista). Chamada a partir do ponto (agregada ao tipo)
+# função que faz parte do tipo de objeto (lista). Chamada a partir do ponto (agregada ao tipo)
 cores.append("Roxo")
 
 # funções que não recebem dados de entrada
@@ -28,7 +28,8 @@ cores.clear()
 
 # primeira função
 def hello_world():
-    """Esta é a documentação da função hello world"""
+    """Esta é a documentação da função hello world
+       aparece quando usamos um help"""
     print("Oi")
     # printa o comentário acima
     help(hello_world)

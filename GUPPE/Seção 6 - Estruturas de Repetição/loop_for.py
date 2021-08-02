@@ -5,31 +5,28 @@ Inicialização, Incremento, Limitador
 
 for item in iteravel:
     // execução
-
 - iteraveis são strings, sequencias, listas, range, tuplas, arrays
+
 Exemplo string é um valor iteravel
 - String: "Leandro"
 - Lista:
     ls = [1, 2, 3]
 - Range:
     numeros = range(1, 10)
-"""
 
-"""
-String
-Enumerate cria uma tupla para cada letra com a letra e o codigo
+Enumerate: cria uma tupla para cada letra com a letra e o codigo
 i representa o indice
 """
 
+# itera na lista letra por letra a atribui a item até o final da lista
 # end="-" para seração das letras
-for item in "Leandro":
-    print(f"{item}", end="-")
-
+for letra in "Leandro":
+    print(f"{letra}", end="-")
 
 for item in "Leandro":
     print(f"Letra: -> {item}")
 
-# gerar indice usando enumerate
+# gerar indice usando enumerate. Para cada item gera um indice iniciando em zero
 for i, item in enumerate("Leandro"):
     print(f"Indice: {i} -> {item}")
 
@@ -48,6 +45,7 @@ print("Tupla -> ", enumerate("Leandro"))
 ls = [10, 20, 30]
 for item in ls:
     print(item)
+
 print("Lista:", ls)
 
 
@@ -72,7 +70,7 @@ print(f"A soma do acumulado é {soma}")
 for _ in range(3):
     print("Repete 3 vezes")
 
-# usando break
+# usando break para forçar a saida antes do final do range
 for num in range(1, 10):
     if num == 6:
         break

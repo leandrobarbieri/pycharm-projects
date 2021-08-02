@@ -48,6 +48,13 @@ print(type(num))
 valor1, valor2 = 1, 4
 print('{0}, {1}'.format(valor1, valor2))
 
+# invertendo o valor de duas variaveis
+var1 = 10
+var2 = 20
+print(f"var1: {var1}, var2: {var2}")
+var1, var2 = var2, var1
+print(f"var1: {var1}, var2: {var2}")
+
 """Tipo booleano: verdadeiro True, Falso: False"""
 var1 = True
 var2 = False
@@ -77,6 +84,7 @@ print(type('Nome'.upper()))
 
 # lista de strings
 print(type("""Gina's Bar""".split()))
+print("""Gina's Bar""".split())
 
 # slice de string
 nome = 'Leandro Barbieri'
@@ -87,7 +95,7 @@ print(nome[:10])
 nome = 'Leandro Barbieri'.split()
 print(nome[1][0:4])
 
-# Começa no primeiro vai até o ultimo :: e inverte -1
+# Começa no primeiro vai até o ultimo :: e muda o sentido +1 para -1, ou seja caminha ao contrario
 nome = 'Leandro Barbieri'
 print(nome[::-1])
 

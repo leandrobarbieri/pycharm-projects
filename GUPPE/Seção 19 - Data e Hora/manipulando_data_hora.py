@@ -2,7 +2,6 @@
 Datetime: modulo integrado para se trabalhar com data e hora
 
 """
-
 import datetime
 
 agora = datetime.datetime.now()

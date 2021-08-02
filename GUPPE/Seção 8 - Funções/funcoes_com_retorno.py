@@ -1,7 +1,8 @@
 """
 Usa a palavra return
 - Finaliza a função sai da execução
-- Pode ter diferentes returns
+- Pode ter diferentes returns em escopos diferentes
+- O codigo tem que conseguir chegar a pelo menos um return
 - Pode retornar qualquer tipo de dado
 """
 
@@ -11,22 +12,25 @@ numeros = [1, 2, 3]
 retorno = numeros.pop()
 print(f"A função pop retorna o svalor {retorno}")
 
-# Sem retorno
+# Sem retorno: print não retorna valor, por isso não pode ser atribuida a uma variavel
 retorno_print = print(numeros)
 print(f"A função print não retorna nada {retorno_print}")
 
 
-# imprimindo o quadrado de 7. Não é um retorno é um print
+# imprimindo o quadrado de 7.
+# Não é um retorno é um print.
 def quadrado_de_7():
     print(7 * 7)
 
 
+# a função acima não pode ser usada para atribuição de valores porque não tem um return
 retorno_quadrado_de_7 = quadrado_de_7()
+
 # quando não retorna nenhum valor o retorno é None
 print(retorno_quadrado_de_7)
 
 
-# Para retornar usar return
+# Para retornar é necessário usar return
 def quadrado_de_7_com_retorno():
     return 7 * 7
 
@@ -75,7 +79,7 @@ for i in list([a, b, c, d, e]):
 from random import random
 
 
-# Função jogar moeda
+# Exemplo: Função jogar moeda
 def jogar_moeda():
     # gera um numero randomico entre 0 e 1
     valor = random()
@@ -87,6 +91,7 @@ def jogar_moeda():
 
 cara = 0
 coroa = 0
+# executa 1Mi de vezes a função e conta quantas caras e coroas
 for _ in range(1_000_000):
     if jogar_moeda() == "Cara":
         cara += 1

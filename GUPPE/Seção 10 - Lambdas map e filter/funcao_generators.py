@@ -12,7 +12,7 @@ nomes = ["Carlos", "Camila", "Cassio"]
 # Listcomprehension
 print(any([nome[0] == "x" for nome in nomes]))
 
-# Generators: ao usar oparenteses o python cria um generator, ao invés de retorna uma lista
+# Generators: ao usar parenteses o python cria um generator, ao invés de retorna uma lista
 gen = (nome[0] == "C" for nome in nomes)
 # <class 'generator'>
 print(type(gen))

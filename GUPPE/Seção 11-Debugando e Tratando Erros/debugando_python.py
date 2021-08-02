@@ -1,5 +1,6 @@
 """
 Identificar os problemas no código
+Clicar no botão vermelho no numero da linha
 """
 
 
@@ -7,7 +8,8 @@ Identificar os problemas no código
 def dividir1(a, b):
     print(f"Valores de entrada {a} e {b}")
     try:
-        return a / b
+        valor = a / b
+        return valor
     except (ValueError, ZeroDivisionError, TypeError) as err:
         print(f"Erro {err}")
 

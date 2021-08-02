@@ -16,7 +16,7 @@ finally:
     print("Boa noite. Sempre é executado")
 
 
-# Tratar as entradas das funções
+# Tratar as entradas das funções. Impede que a divisão por zero de erro
 def dividir(a, b):
     try:
         return a / b
@@ -38,7 +38,3 @@ def dividir1(a, b):
 
 
 print(dividir1(1, "a"))
-
-
-
-

@@ -1,7 +1,7 @@
 """
 raise: lançar erros customizados para a pilha de execução do programa
 Criar os proprios tipos de erros de acordo com a necessidade
-Regras de negócio que lança exptions
+Regras de negócio que lança exceptions
 Proprias mensagens de erro
 
 Nada após o raise é executado

@@ -36,14 +36,14 @@ try:
 except TypeError as err:
     print(f"O tipo passado para a função não está correto - {err}")
 
-# 4- Tratando um erro específico TypeError
+# 4- Tratando um erro específico ValueError
 try:
     print(int("A"))
 except ValueError as err:
     print(f"O tipo não é o esperado  - {err}")
 
 
-# Capiturando vários tipos no mesmo try. A última capitura os erros genéricos, não previstos
+# Capiturando vários tipos de erro no mesmo try. O último except captura os erros genéricos, não previstos
 try:
     print(int("A"))
 except ValueError as err:

@@ -1,7 +1,7 @@
 """
-List comprehension: Uma das features mais poderasa de python!
-Permite gerar listas a partir de outro iteravel aplicando uma expressão
-Sintaxe: [ <expressao> for dado in <interavel>]
+List comprehension: Uma das features mais poderasas de python!
+Permite gerar listas a partir de outro iteravel aplicando uma expressão e iterando em cada item
+Sintaxe: [ <expressao> for <dado> in <interavel> ] retorna um list
 """
 
 numeros = [1, 2, 3, 4, 5]
@@ -72,23 +72,3 @@ print(nova_lista6)
 
 # Usando list comprehension dupla com dois for
 print([i for lista in listas for i in lista])
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

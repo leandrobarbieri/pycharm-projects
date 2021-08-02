@@ -13,7 +13,7 @@ def hello_world():
 # Exibir a documentação do metodo hello_word
 print(help(hello_world))
 
-# Usando a propriedade do da função como objeto
+# Usando a propriedade do da função como objeto para var a docstring
 print(hello_world.__doc__)
 print("---------------------------")
 
@@ -31,6 +31,7 @@ def exponencial(numero, potencia=2):
 print(exponencial.__doc__)
 
 
+# os parametros obrigatorios no inicio, args (dinamicos) em segundo e por ultimo os param com valores default
 def minha_funcao(a, *args, b=1):
     """
     :param a: primeiro parametro obrigatorio

@@ -8,7 +8,8 @@ https://docs.python.org/3/library/collections.html#collections.defaultdict
 
 # Tratamento do dict padrão para chaves não encontradas
 dicionario = {"curso": "Python"}
-# print(dicionario["aaa"])
+# print(dicionario["aaa"]) # KeyError
+
 if "aaa" in dicionario:
     print(dicionario["aaa"])
 else:

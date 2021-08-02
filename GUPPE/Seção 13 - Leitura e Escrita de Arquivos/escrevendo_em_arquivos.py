@@ -1,16 +1,15 @@
 """
-Alterar o conteudo
+Alterar o conteudo do arquivo
 
 1-Abrir
 2-Escrever
 3-Fechar
 
 Ao abrir para leitura apenas podemos ler, e não escrever
-Ao abrir par escrita não podemos ler ao mesmo tempo
+Ao abrir par escrita não podemos ler ao mesmo tempo que escreve
 
 Usar open() no modo:
 "w": se o arquivo não existir será criado, se existir o conteúdo anterior será apagado e sobrescrito
-
 """
 
 with open("texto.txt", "w") as arquivo:

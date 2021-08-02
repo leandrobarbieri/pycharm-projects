@@ -1,9 +1,7 @@
 """
-Lista de listas
+ListedLists - Lista de listas
 Podem ser de qualquer tipo dentro da mesma lista, misturado
 Arrays multidimensionais
-
-ListedLists
 """
 
 listas = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
@@ -19,6 +17,6 @@ for i in listas:
     for j in i:
         print(j)
 
-# usando listcomprehension
+# usando listcomprehension para criar um for aninhado e com um validação no final. Top!
 print([num for lista in listas for num in lista if num > 4])
 

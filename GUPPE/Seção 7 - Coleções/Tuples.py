@@ -1,7 +1,7 @@
 """
 Tuplas: Listas com enumerables, não mutaveis. são parecidas com listas.
 Diferenças:
-# Tuplas são representadas por parênteses
+# Tuplas são representadas por parênteses, ou podem apenas estar separadas por ,
 # Tuplas são imutaveis. Toda operação em uma tupla gera uma nova tupla
 
 # Atenção:
@@ -16,7 +16,7 @@ Não é tupla:
     (1)
 
 # Métodos de adição e remoção de elementos em tuplas não existem
-# Existem: soma, maximo, min, tamanho
+# Existem: soma, maximo, min, tamanho (len)
 
 Dicas de utilização: sempre que não precisarmos mudar os dados de uma coleção. Evitar inconsistências
 - Lista de Meses: Jan, Fev, Mar, Abr, Mai....
@@ -69,7 +69,7 @@ tupla7 = ("Leandro", "Barbieri")
 tupla8 = ("Bruna", "Moraes", "Barbieri")
 print(f"A tupla {tupla7} foi concatenada com a tupla {tupla8} e ficou assim: {tupla7 + tupla8}")
 
-# zip:tu pareando plas. Primeiro elemento de uma com o primeiro elemento da outra...
+# zip: pareando tuplas. Primeiro elemento de uma com o primeiro elemento da outra...
 print(f"A tupla { tupla7 } foi pareada com a tupla { tupla8 }. Esse é o "
       f"resultado: { list(zip(tupla7, tupla8)) }")
 
@@ -87,7 +87,7 @@ for i, (firstName, lastName) in enumerate(zip(*lista1)):
     print(f"Índice> {i}, FirstName: {firstName}, LastName: {lastName}")
 
 
-# Acessando valores. Valores pode ser alterados, o que não pode é adicionar, remover
+# Acessando valores. Valores podem ser acessados, o que não pode é adicionar, remover
 # Igual a lista informa o índice tupla9[1]
 tupla9 = (1, 2, 3)
 print(f"Tupla: {tupla9}. Acesando o segundo elemento pelo índice:  {tupla9[1]}")

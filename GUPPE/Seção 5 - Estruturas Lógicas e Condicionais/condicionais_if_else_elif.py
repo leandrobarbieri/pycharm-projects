@@ -8,9 +8,10 @@ if idade < 18:
 elif idade > 18:
     print("Maior de idade")
 else:
-    print("Tem 18")
+    print("Tem exatamente 18 anos se tiver informando corretamente!")
 
-# If ternário
+# If ternário, uma forma mais sucinta de criar um if simples
+# <true> if <condição> else <false>
 ternario = "Par" if 10 % 2 else "Impar"
 
 

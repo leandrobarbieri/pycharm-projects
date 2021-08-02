@@ -1,7 +1,6 @@
 """
-Não confundir com a função sort que existe em listas
-
 Essa função sorted podemos usar em qualquer iteravel
+Não confundir com a função sort que existe em listas
 """
 
 # sorted de lista exclusivo para listas

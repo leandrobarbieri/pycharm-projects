@@ -27,9 +27,10 @@ import this: digitar no console imprime o poema que descreve as melhores prátic
 Duas linhas entre classes, funções
 Uma linha de separação entre metodos
 
-[5] - Imports.No topo do arquivo
+[5] - Imports sempre no topo do arquivo
 Devem ser sempre feitos em linhas separadas para modulos inteiros
 import pandas as pd
+from pandas import DataFrame, Series
 
 * para import de pacotes específicos. mesma linha
 from types import StringType, ListType
@@ -43,14 +44,16 @@ Certo: nome_funcao(algo[1], {outro:2})
 [7] - Termine uma instrução sempre com uma nova linha
 
 """
-# Imprim: Esse modulo foi importado!
+from pandas import DataFrame
+
+# Imprime: Esse modulo foi importado! porque no arquivo main da pasta seção inicial tem um tratamento
+# que identifica se o modulo está sendo importado ou executado diretamente
 import main
 
-from pandas import DataFrame
-d = DataFrame()
 
 def nome_funcao():
     print(__name__)
+
 
 # algo = [1]
 # outro = [1, 2]

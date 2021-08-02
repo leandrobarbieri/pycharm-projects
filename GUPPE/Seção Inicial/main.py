@@ -2,8 +2,8 @@
    eles são assim para evitar que os programas tenham incompatibilidades de nome
    são atributos e metodos internos
 
-   1- Caso o arquivo seja executado diretamente ele o atributo __name__ será chamado de __main__
-   2- Se o arquivo for importado por outro arquivo ele o atributo __name__ será o mesmo nome do arquivo
+   1- Caso o arquivo seja executado diretamente, o atributo __name__ será chamado de __main__
+   2- Se o arquivo for importado por outro arquivo o atributo __name__ será o mesmo nome do arquivo
 """
 
 # Press Shift+F10 to execute it or replace it with your code.

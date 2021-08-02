@@ -6,11 +6,10 @@ Passos para trabalhar com arquivos
 3-Fechar a conexão com o arquivo no disco streaming
 
 # with cria um contexto de trabalho com o arquivos
-os recursos utilizados são fechados após o témino do bloco
-
+os recursos utilizados são fechados após o término do bloco
 """
 
-# abre um
+# abre um contexto para o arquivo na memoria e fecha automaticamente
 with open("texto.txt") as arquivo:
     print(f"O aquivo está fechado? { arquivo.closed}")
 
