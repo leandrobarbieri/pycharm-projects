@@ -39,6 +39,7 @@ def hello_world():
 hello_world()
 
 
+# sem parametro e sem retorno
 def cantar_parabens():
     print("Parabens para você\n"
           "Desta data querida")

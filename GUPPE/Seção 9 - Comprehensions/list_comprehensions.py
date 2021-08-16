@@ -58,7 +58,7 @@ print(f"Impares: {len(numeros_impares)}, Pares: {len(numeros_pares)}")
 # Dobra de valor apenas os numeros pares e divide os numeros ímpares
 print([num * 2 if num % 2 == 0 else num / 2 for num in range(10)])
 
-# List comprehension aninhadas (listas de listas)
+# List comprehension em listas aninhadas (listas de listas)
 # Matriz de 3 x 3
 listas = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
 print(listas[2][1])

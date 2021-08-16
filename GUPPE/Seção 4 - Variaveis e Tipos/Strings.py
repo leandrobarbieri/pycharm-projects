@@ -1,9 +1,8 @@
 """
-Uma string funciona como uma lista de letras
+Uma string funciona como uma lista/tupla composta por letras
 Tem varios metodos semelhantes a listas
 Uma string pode ser convertida em lista
 """
-
 
 nome_string = "Leandro"
 nome_lista = ["L", "e", "a", "n", "d", "r", "o"]
@@ -30,6 +29,7 @@ nome_lista[0] = "B"
 print(nome_lista)
 
 # atribuição em string não é permitido: TypeError: 'str' object does not support item assignment
+# porque str é tratado como uma tupla imutavel
 #nome_string[0] = "B"
 
 
@@ -78,7 +78,7 @@ for cpf in cpfs:
 frase1 = "Olá pessoal"
 frase2 = "Batatinha quando nasce espalha ramas pelo chão".replace(" ", "-")
 print(frase1.split())
-print(frase2.split(sep="-", maxsplit=2))
+print(frase2.split(sep="-", maxsplit=3)) # separa no máximo 3 palavras, o restante deixa junto
 
 # lendo arquivos com varias linhas texto
 with open("emails.txt", "r") as lista_emails:
@@ -92,7 +92,7 @@ with open("emails.txt", "r") as lista_emails:
 # lista todos os emails e extrai apenas a parte do login
 # inicia no primeiro catacter e termina na posição encontrada na função quando achar o @ = email[:email.find('@')
 for email in emails:
-    print(f"Login: {email[:email.find('@')]}")
+    print(f"Login: {email[:email.find('@')]}") # retorna do inicio até a posição do caracter @
 
 
 # Traduzir um texto automaticamente usando a internet

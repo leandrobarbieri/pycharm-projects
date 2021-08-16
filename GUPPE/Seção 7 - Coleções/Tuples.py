@@ -1,5 +1,5 @@
 """
-Tuplas: Listas com enumerables, não mutaveis. são parecidas com listas.
+Tuplas: Listas com enumerables, não imutaveis. são parecidas com listas.
 Diferenças:
 # Tuplas são representadas por parênteses, ou podem apenas estar separadas por ,
 # Tuplas são imutaveis. Toda operação em uma tupla gera uma nova tupla
@@ -15,7 +15,7 @@ Diferenças:
 Não é tupla:
     (1)
 
-# Métodos de adição e remoção de elementos em tuplas não existem
+# Métodos de adição e remoção de elementos em tuplas não existem, são imutaveis
 # Existem: soma, maximo, min, tamanho (len)
 
 Dicas de utilização: sempre que não precisarmos mudar os dados de uma coleção. Evitar inconsistências
@@ -26,7 +26,7 @@ São mais rapidas do que listas
 Deixa seu código mais seguro. Elementos imutáveis trazem mais segurança para o seu código
 """
 
-# Tupla vazias
+# Tupla vazias ()
 print(type(()))
 
 # Tupla normal

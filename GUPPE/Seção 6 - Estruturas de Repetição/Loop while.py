@@ -23,7 +23,7 @@ while saida:
         saida = False
 
 
-# usando break
+# forma 3: usando break
 while True:
     if int(input("Deseja sair? Digite 1: ")) == 1:
         break

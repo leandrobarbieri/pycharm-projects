@@ -18,13 +18,12 @@ tupla1 = (9, 8, 7, 6, 5, 4, 3, 2, 1)
 print(sorted(tupla1))
 print(tupla1)
 
-# Alterando a forma de ordenação, reverse, ordena e depois reverte
-print(sorted(tupla1, reverse=True))
-
 # Sempre retorna uma lista, se precisar basta converter
 print(f"Isso é uma list {sorted(tupla1)}")
 print(f"Isso é uma tuple {tuple(sorted(tupla1))}")
 
+# Alterando a forma de ordenação, reverse, ordena e depois reverte
+print(sorted(tupla1, reverse=True))
 
 # lista de dicts
 usuarios = [
@@ -37,16 +36,19 @@ usuarios = [
 ]
 
 # Não consegue iterar neste dicionário, com dicionário temos que informar o key
-# Para cada usuário no dict aplica a lambda para acessar uma chave que será usada na ordenação
 
 # Min vem primeiro porque len retona o nome com menor numero de caracteres
+print("-----------")
 print(sorted(usuarios, key=lambda x: len(x["username"])))
 
 # Alice vem primeiro, porque está em ordem alfabetica
+print("-----------")
 print(sorted(usuarios, key=lambda x: x["username"]))
 
 # Samuel vem primeiro, porque a quantidade de tweets na lista é maior
+print("-----------")
 print(sorted(usuarios, key=lambda x: len(x["tweets"]), reverse=True))
+print("-----------")
 
 # Lista de musicas
 lista_musicas = [

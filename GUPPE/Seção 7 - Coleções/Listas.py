@@ -43,6 +43,10 @@ if num in lista2:
     print("Encontrei 4")
 else:
     print("Não econtrei 4")
+
+# checar se um determinado nome está na lista usando parte do nome
+lista_nomes = ["Leandro", "Bruna", "Breno"]
+print([valor for valor in lista_nomes if valor.startswith("Br")])
 print("---------------")
 
 lista4.sort()
@@ -67,14 +71,12 @@ lista6.append(1)
 print(f"A lista6 {lista6} tem {lista6.count(1)} numeros 1!")
 print("---------------")
 
-
 # append permite adicionar uma lista como elemento de uma lista
 # sempre no final da lista
 # lista6 [1, 3, 1, 4, 1, 1, [1, 2, 3]]
 lista6.append([1, 2, 3])
 print(f"A lista6 {lista6}")
 print("---------------")
-
 
 # procura a lista inteira como um elemento da outra lista
 if [1, 2, 3] in lista6:
@@ -123,7 +125,7 @@ print(lista10)
 print(f"Tamanho da lista: {len(lista10)}")
 print("---------------")
 
-# remove o ultimo elemento de uma lista pop remove e o retorna
+# remove o ultimo elemento de uma lista pop e o retorna
 print(f"Foi removido o elemento {lista10.pop()}. Agora a lista está assim {lista10}")
 print(f"Foi removido o elemento {lista10.pop()}. Agora a lista está assim {lista10}")
 print(f"Foi removido o elemento {lista10.pop()}. Agora a lista está assim {lista10}")
@@ -131,7 +133,7 @@ print("---------------")
 
 # remover pelo índice
 lista11 = list("Leandro")
-print(f"Foi removido o elemento na posição 2, {lista11.pop(2)}, agora a lista está assim: {lista11}")
+print(f"Foi removido o elemento na posição 2, '{lista11.pop(2)}', agora a lista está assim: {lista11}")
 print("---------------")
 
 # limpar totalmente a lista. Remover todos os elementos
@@ -187,7 +189,7 @@ while produto != 'sair':
 
 for produto in carrinho:
     print(f" Produto: {produto}")
-print(f"Todos os produtos: {carrinho}")
+print(f"Todos os produtos: {carrinho}, total: {len(carrinho)} produtos cadastrados.")
 print("---------------")
 
 # criar listas utilizando variáveis

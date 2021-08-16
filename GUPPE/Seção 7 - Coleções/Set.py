@@ -9,14 +9,15 @@ São bons para utilizar quando precisamos armazenar elementos mas não nos impor
 São referenciados com {}
 """
 
-# Definindo um conjunto
-s1 = set({1, 2, 3, 4, 5, 6, 7, 8, 9, 9, 9})
+# Definindo um conjunto usando {}
+s1 = {1, 2, 3, 4, 5, 6, 7, 8, 9, 9, 9}
 print(type(s1))
-print(s1)
+print(f"Remove numero repetidos: {s1}")
 
 # Converter uma string para um set
 lista1 = list("leandro")
 s2 = set(lista1)
+
 # A lista não está ordenada
 print(s2)
 
@@ -31,7 +32,7 @@ s3 = {1, "a", True, 1.9, (1, 2)}
 for i in s3:
     print(type(i))
 
-# Iterando um um set
+# Iterando um set
 for valor in s3:
     print(f"Valor set: {valor}")
 
@@ -46,6 +47,7 @@ while True:
     cidades.append(cidade)
 
 # lista de cidade únicas
+# usar set na lista de cidades, remove as duplicadas e retorna com len a quantidade de cidades unicas
 print(f"Pessoas: {len(cidades)}, Cidades : {len(set(cidades))}, Lista: {set(cidades)}")
 
 # Acicionando elementos (conjuntos são mutáveis)

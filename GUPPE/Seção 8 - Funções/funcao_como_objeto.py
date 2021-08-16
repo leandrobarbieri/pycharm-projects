@@ -12,6 +12,7 @@ lista1 = ["#TesTe1!", "#tEste1#", "?TeSte1?"]
 
 
 # Primeira forma: Iterar sob a lista de palavras e aplicar os métodos de tratamento definidas na função
+# essa abordagem é fixa quanto aos tipos de funções usadas no processo de limpeza
 def tratar_strings(lista):
     strings_tratadas = []
     for texto in lista:
@@ -25,8 +26,7 @@ def tratar_strings(lista):
 print(tratar_strings(lista1))
 
 
-# Segunda Forma: Usando funções como parâmetros
-
+# Segunda Forma: Usando funções como parâmetros. lista dinamica de funcoes de limpeza
 
 # Define uma função auxiliar para aplicar uma expressão regular
 def remover_pontuacao(texto):

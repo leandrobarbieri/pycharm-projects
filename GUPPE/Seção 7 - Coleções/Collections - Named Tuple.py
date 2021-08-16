@@ -10,6 +10,7 @@ print(tupla1[1])
 
 # declarando os parametros da named tuple
 from collections import namedtuple
+
 # Forma 1
 cachorro = namedtuple("cachorro", "idade raca nome")
 # Forma 2

@@ -21,7 +21,7 @@ dict1 = {"a": 1, "b": 2}
 dict2 = {"b": 2, "a": 1}
 print(dict1 == dict2)
 
-# Para um dicionário OrderedDict eles não são iguas, porque um está na ordem diferente. A ordem importa
+# Para um dicionário OrderedDict eles NÃO são iguas, porque um está na ordem diferente. A ordem importa
 ordereddict1 = OrderedDict({"a": 1, "b": 2})
 ordereddict2 = OrderedDict({"b": 2, "a": 1})
 print(ordereddict1 == ordereddict2)
