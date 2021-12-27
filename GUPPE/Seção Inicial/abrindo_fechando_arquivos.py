@@ -20,14 +20,13 @@ arquivo1.writelines("Opa! Olha! Escrevendo a segunda linha")
 # temos sempre que lembrar de fechar o arquivo para liberar o recurso. Usando with não precisaria
 arquivo1.close()
 
-# Lendo o arquivo
+# Lendo o arquivo cin with
 with open("arquivo.txt", "r") as arquivo:
     linhas = arquivo.readlines()
 
 # cada linha vira um elemento de uma lista
 for linha in linhas:
     print(linha)
-
 
 # Usando with. Fecha o arquivo automaticamente
 # Escrevendo em um arquivo
@@ -39,3 +38,8 @@ with open("arquivo_novo.txt", "w") as arquivo:
 # Usando a opçãp "a" append para adicionar conteúdo sem apagar o anterior
 with open("arquivo_novo.txt", "a") as arquivo:
     arquivo.write("Adicionando conteúdo")
+
+
+# lendo o conteúdo adicionado
+with open("arquivo_novo.txt", "r") as arq:
+    print(arq.readlines())

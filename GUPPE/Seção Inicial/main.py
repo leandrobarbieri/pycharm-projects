@@ -1,6 +1,6 @@
 """Os atributos e metodos com dois __ underlines são chamados de Dunder
    eles são assim para evitar que os programas tenham incompatibilidades de nome
-   são atributos e metodos internos
+   são atributos e metodos internos.
 
    1- Caso o arquivo seja executado diretamente, o atributo __name__ será chamado de __main__
    2- Se o arquivo for importado por outro arquivo o atributo __name__ será o mesmo nome do arquivo

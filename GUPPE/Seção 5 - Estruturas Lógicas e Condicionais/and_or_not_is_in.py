@@ -37,6 +37,8 @@ print(f"1 in [1, 2, 3, 4]:  {1 in [1, 2, 3, 4]}")
 
 # Checagem em dict
 estados = {"ES": 1, "RJ": 2, "SP": 3}
+res = {'ES' in estados}
+print(f"ES in ES, RJ, SP:  { res}")
 print(f"ES in ES, RJ, SP:  { 'ES' in estados}")
 print(f"RS in ES, RJ, SP:  { 'RS' in estados}")
 

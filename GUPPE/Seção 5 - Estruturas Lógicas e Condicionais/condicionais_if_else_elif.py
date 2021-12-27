@@ -19,3 +19,4 @@ ternario = "Par" if 10 % 2 else "Impar"
 
 
 
+

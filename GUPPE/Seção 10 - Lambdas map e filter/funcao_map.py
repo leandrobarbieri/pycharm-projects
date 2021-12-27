@@ -2,6 +2,11 @@
 Mapear um dado de uma lista para uma função aplicar a função em cada elemento da lista
 Aplica a função em todos os elementos da lista
 A função usada no map só pode receber um parametro
+
+map() is used to substitute each value in a Series with another value.
+
+https://towardsdatascience.com/introduction-to-pandas-apply-applymap-and-map-5d3e044e93ff
+
 """
 import math
 
